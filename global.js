@@ -9,7 +9,6 @@ Router.route('/user/:id', {
 			return {userId: this.params.id};
 		else
 			return null;
-
 	}
 })
 Router.route('/', {
