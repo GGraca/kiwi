@@ -4,6 +4,8 @@
 
 <body>
   {{> loginButtons}}
+  <br>
+  <br>
 </body>
 
 <template name="hello">
@@ -12,11 +14,12 @@
 </template>
 
 <template name="home">
-  {{#each Posts}}
+  {{#each posts}}
     {{> post}}
+    <br>
   {{/each}}
 </template>
 
 <template name="post">
-  {{ username }}
+  {{ username }}: {{ text }}
 </template>
