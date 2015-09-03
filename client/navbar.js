@@ -6,4 +6,4 @@ Template.navbar.helpers({
 	myUsername: function(){
 		return Meteor.user().username;
 	}
-})
+});

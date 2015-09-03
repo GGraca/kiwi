@@ -3,7 +3,6 @@
 </head>
 
 <body>
-  {{> loginButtons}}
   {{> navbar}}
 </body>
 
@@ -15,9 +14,10 @@
 <template name="home">
   {{#each posts}}
     {{> post}}
+    <br>
   {{/each}}
 </template>
 
 <template name="post">
-  {{ username }}: {{ text }}
+	<a href="/user/{{userId}}"> {{username}} </a> : {{ text }}
 </template>

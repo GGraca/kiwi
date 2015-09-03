@@ -1,4 +1,6 @@
 
 <template name="navbar">
-	<a href="/"> Home </a> <a href="/user/{{myUserId}}"> {{myUsername}} </a>
+	<div>
+		<a href="/"> Home </a> <a href="/user/{{myUserId}}"> {{myUsername}} </a> {{> loginButtons}}
+	</div>
 </template>

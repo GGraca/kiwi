@@ -15,11 +15,10 @@ Template.user.helpers({
 });
 
 
-
 Template.user.events({
 	'keypress textarea': function (evt) {
 		if (evt.which === 13) {
-			Posts.insert({userId: Meteor.userId(), text: evt.target.value, username: Meteor.user().username, date: Date.parse()})
+			Posts.insert({userId: Meteor.userId(), text: evt.target.value, username: Meteor.user().username, date: Date.parse()});
 			evt.target.value = "";
 			evt.stopPropagation();
 		}
