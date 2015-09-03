@@ -10,3 +10,13 @@
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
 </template>
+
+<template name="home">
+  {{#each Posts}}
+    {{> post}}
+  {{/each}}
+</template>
+
+<template name="post">
+  {{ username }}
+</template>

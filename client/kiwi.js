@@ -17,3 +17,9 @@ Template.hello.events({
     Session.set('counter', Session.get('counter') + 1);
   }
 });
+
+Template.home.helpers({
+  posts: function(){
+    return Posts.find({});
+  }
+});
