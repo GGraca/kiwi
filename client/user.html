@@ -1,12 +1,15 @@
 <template name="user">
-
 <h1> {{username}}'s Page</h1>
 
-{{#if isMyPage}}
-<textarea placeholder="What's up?" id='post'></textarea>
+{{#if currentUser}}
+<p> username: {{username}} </p>
 {{/if}}
+<textarea placeholder="What's up?" id='post'></textarea>
 
-<h3> Posts </h3>
+<h2> Posts </h2>
+{{#each posts}}
+{{> post}}
+<br>
+{{/each}}
 
 </template>
-

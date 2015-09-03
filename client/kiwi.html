@@ -10,3 +10,14 @@
 <template name="notFound">
   <p> Not Found </p>
 </template>
+
+
+<template name="home">
+  {{#each posts}}
+    {{> post}}
+  {{/each}}
+</template>
+
+<template name="post">
+  {{ username }}: {{ text }}
+</template>

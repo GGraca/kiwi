@@ -12,5 +12,8 @@ Router.route('/user/:id', {
 
 	}
 })
+Router.route('/', {
+	template: 'home'
+})
 
 Posts = new Mongo.Collection('posts');
