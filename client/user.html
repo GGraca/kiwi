@@ -6,10 +6,19 @@
 {{/if}}
 <textarea placeholder="What's up?" id='post'></textarea>
 
+<h2> Create Event </h2>
+
+<div id='event'> 
+
+<p> Title: <input type="text" id="evtname"/> Date: <input type="date" id="evtdate"/> <button id="create"> Create </button> </p>
+<p> Hashtags: <button id="addhashtag"> + </button> </p>
+<p> <input type="text" class="hashtag"> </p>
+
+</div>
+
 <h2> Posts </h2>
 {{#each posts}}
 {{> post}}
-<br>
 {{/each}}
 
 </template>

@@ -14,10 +14,9 @@
 <template name="home">
   {{#each posts}}
     {{> post}}
-    <br>
   {{/each}}
 </template>
 
 <template name="post">
-	<a href="/user/{{userId}}"> {{username}} </a> : {{ text }}
+	<p> <a href="/user/{{userId}}"> {{username}} </a> : {{ text }} </p>
 </template>

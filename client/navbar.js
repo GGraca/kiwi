@@ -1,9 +1,15 @@
 
 Template.navbar.helpers({
 	myUserId: function(){
-		return Meteor.userId();
+		if(Meteor.userId())
+			return Meteor.userId();
+		else
+			return "";
 	},
 	myUsername: function(){
-		return Meteor.user().username;
+		if(Meteor.user() != null)
+			return Meteor.user().username;
+		else
+			return "";
 	}
 });
